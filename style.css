@@ -1,0 +1,338 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #030b0d;
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+  color: white;
+  
+}
+
+.card {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  
+}
+.card .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+.card:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+.card:hover .content P {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ /* porsche */
+
+.container{
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer
+}
+
+.container .image1-box{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+}
+
+.container .image1-box .car{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+
+}
+
+.container:hover .car {
+  filter: grayscale(1) brightness(0.4);
+}
+.container:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+.content1 {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content1 h2,
+.content1 p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content1 h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content1 p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  transform: translateY(50%);
+}
+.container:hover .content1 h2 {
+  scale: 1;
+  opacity: 1;
+}
+.container:hover .content1 P {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* lamborghini */
+
+.container1{
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer
+}
+
+.container1 .image2-box{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+}
+
+.container1 .image2-box .truck{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+
+}
+
+.container1:hover .truck {
+  filter: grayscale(1) brightness(0.4);
+}
+.container1:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+
+.container1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+.content2 {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content2 h2,
+.content2 p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content2 h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content2 p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  transform: translateY(50%);
+}
+.container1:hover .content2 h2 {
+  scale: 1;
+  opacity: 1;
+}
+.container1:hover .content2 P {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* supra */
+
+.container2{
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer
+}
+
+.container2 .image3-box{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+}
+
+.container2 .image3-box .bike{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+
+}
+
+.container2:hover .bike {
+  filter: grayscale(1) brightness(0.4);
+}
+.container2:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+
+.container2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+.content3 {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content3 h2,
+.content3 p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content3 h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content3 p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  transform: translateY(50%);
+}
+.container2:hover .content3 h2 {
+  scale: 1;
+  opacity: 1;
+}
+.container2:hover .content3 P {
+  opacity: 1;
+  transform: translateY(0);
+}
